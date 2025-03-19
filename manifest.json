@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Summarizer",
+  "version": "1.0",
+  "description": "Summarize YouTube videos, download summaries, and ask questions.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": ["activeTab", "storage", "downloads"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
