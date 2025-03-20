@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Summarizer",
+  "name": "extension",
   "version": "1.0",
-  "description": "Summarize YouTube videos, download summaries, and ask questions.",
+  "description": "template for extension",
   "icons": {
     "48": "icon.png"
   },
@@ -12,7 +12,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://www.youtube.com/*"],
+      "matches": [""],
       "js": ["content.js"]
     }
   ],
